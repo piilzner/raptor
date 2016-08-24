@@ -1,0 +1,311 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700';
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700';
+.centered {
+  float: none;
+  margin: 0 auto; }
+
+.clearfix {
+  clear: both; }
+
+.project-branding {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 16px; }
+  .project-branding a {
+    text-decoration: none; }
+  .project-branding .label {
+    padding: 10px 20px;
+    background: #5e66d0; }
+
+.side-menu {
+  background: #1c2337;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  list-style: none; }
+  .side-menu a {
+    text-decoration: none; }
+  .side-menu li {
+    padding: 20px 30px;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 14px;
+    color: #e2e2e2;
+    cursor: pointer; }
+    .side-menu li i {
+      margin-right: 15px; }
+    .side-menu li:hover {
+      background: #111623; }
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f1f1f1;
+  font-family: 'Open sans';
+  font-weight: 300;
+  font-size: 16px;
+  color: #222; }
+
+#container {
+  width: 400px;
+  background: #fff;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  border: 1px solid #ddd; }
+  #container .logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 7px solid #f1f1f1;
+    margin: -60px auto 40px; }
+    #container .logo img {
+      width: 100%;
+      height: auto; }
+  #container .content-container {
+    width: 80%;
+    margin: 0 auto; }
+  #container label {
+    width: 100%;
+    font-weight: 300; }
+    #container label input {
+      width: 100%;
+      height: 50px;
+      margin-bottom: 15px; }
+  #container .footer-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    #container .footer-area button {
+      font-size: 18px; }
+  #container .end-text {
+    margin-top: 40px; }
+
+.side-menu-container {
+  background: #1c2337;
+  padding: 0; }
+
+.crud-post {
+  width: 100%;
+  height: 100px;
+  background: #111623;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .crud-post .crud-new-post, .crud-post .crud-delete-post {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px; }
+    .crud-post .crud-new-post i, .crud-post .crud-delete-post i {
+      font-size: 28px;
+      margin-bottom: 7px; }
+    .crud-post .crud-new-post:hover, .crud-post .crud-delete-post:hover {
+      background: #1f2741;
+      color: #f1d950; }
+
+.posts {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  overflow: scroll; }
+  .posts li {
+    position: relative;
+    height: 100px;
+    margin: 0;
+    padding: 0 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    cursor: pointer; }
+    .posts li span {
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out; }
+    .posts li .post-top-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .posts li .post-top-info h3 {
+        display: inline-block;
+        margin: 0;
+        font-family: 'Ubuntu';
+        font-weight: 400;
+        font-size: 18px;
+        color: #b1b8de; }
+    .posts li .post-bottom-info {
+      margin-top: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      color: #b1b8de;
+      font-size: 12px;
+      font-family: 'Ubuntu'; }
+      .posts li .post-bottom-info i {
+        margin-left: 5px;
+        font-size: 14px; }
+  .posts .odd {
+    background: #1f2741; }
+  .posts .even {
+    background: #212c45; }
+
+.active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: #f1d950; }
+
+.activeColor {
+  color: #f1d950 !important; }
+
+.post-container {
+  background: #f1f1f1;
+  padding: 30px 60px;
+  overflow: scroll; }
+  .post-container .post-preview {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .post-container .post-preview .preview-post {
+      font-size: 14px;
+      cursor: pointer; }
+      .post-container .post-preview .preview-post i {
+        font-size: 18px; }
+  .post-container .post-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px; }
+    .post-container .post-header .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 20px;
+      box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2); }
+      .post-container .post-header .avatar img {
+        width: 100%;
+        height: auto; }
+    .post-container .post-header .post-header-info {
+      font-family: 'Ubuntu';
+      font-size: 14px;
+      font-weight: 600; }
+      .post-container .post-header .post-header-info p {
+        margin: 0; }
+      .post-container .post-header .post-header-info span {
+        font-family: 'Ubuntu';
+        font-size: 10px;
+        font-weight: 300;
+        color: #828282; }
+  .post-container .post-content {
+    /* layout.css Style */
+    /* skin.css Style*/ }
+    .post-container .post-content h3 {
+      font-family: 'Ubuntu';
+      font-size: 46px;
+      font-weight: 600;
+      margin-bottom: 30px; }
+    .post-container .post-content p {
+      font-family: 'Ubuntu';
+      font-size: 18px;
+      font-weight: 300; }
+    .post-container .post-content .post-title {
+      width: 100%;
+      height: 50px;
+      margin-bottom: 50px; }
+    .post-container .post-content .container {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      margin-top: 50px; }
+    .post-container .post-content .upload-drop-zone {
+      height: 200px;
+      border-width: 2px;
+      margin-bottom: 20px; }
+    .post-container .post-content .upload-drop-zone {
+      color: #ccc;
+      border-style: dashed;
+      border-color: #ccc;
+      line-height: 200px;
+      text-align: center; }
+    .post-container .post-content .upload-drop-zone.drop {
+      color: #222;
+      border-color: #222; }
+
+body {
+  background: #1f2741;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 12px;
+  font-family: 'Open sans'; }
+
+.full {
+  height: 100vh; }
+
+.post-ordering {
+  background: #1f2741; }

@@ -1,0 +1,27 @@
+<div class="project-branding">
+    <a href="#dashboard"><div class="label"><i class="fa fa-tachometer" style="margin-right: 5px"></i>{{projectName | limitTo: 20}}</div></a>
+</div>
+<ul class="side-menu">
+    <a ng-href="#posts">
+        <li>
+            <i style="color: #f1d950" class="fa fa-file-text-o"></i> Posts (<span>{{ posts.length }}</span>)
+        </li>
+    </a>
+    <li>
+        <i style="color: #ee8233" class="fa fa-magic"></i> Design
+    </li>
+    <li>
+        <i style="color: #e43453" class="fa fa-briefcase"></i> Modules
+    </li>
+    <li>
+        <i style="color: #30c178" class="fa fa-newspaper-o"></i> Planning
+    </li>
+    <li>
+        <i style="color: #474580" class="fa fa-cog"></i> Settings
+    </li>
+    <li>
+        <i style="color: #34b9b4" class="fa fa-user"></i> {{ user }} <i style="margin-left: 5px; color: #34b9b4" class="fa fa-caret-down"></i>
+    </li>
+</ul>
+
+

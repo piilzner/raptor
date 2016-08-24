@@ -1,0 +1,189 @@
+.side-menu-container
+    background: #1c2337
+    padding: 0
+    
+
+           
+.crud-post
+    width: 100%
+    height: 100px
+    background: #111623
+    display: flex
+    justify-content: center
+    
+    .crud-new-post, .crud-delete-post
+        width: 50%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        transition: all .3s ease-in-out
+        color: #fff
+        cursor: pointer
+        font:
+            size: 14px
+        i
+            font-size: 28px
+            margin-bottom: 7px
+            
+        &:hover
+            background: #1f2741
+            color: $yellow
+        
+.posts
+    width: 100%
+    padding: 0
+    list-style: none
+    overflow: scroll
+    
+    
+    li
+        position: relative
+        height: 100px
+        margin: 0
+        padding: 0 50px
+        display: flex
+        justify-content: center
+        flex-direction: column
+        cursor: pointer
+        
+        
+        span
+            transition: all .4s ease-in-out
+            
+        .post-top-info
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+            h3
+                display: inline-block
+                margin: 0
+                font:
+                    family: 'Ubuntu'
+                    weight: 400
+                    size: 18px
+                color: #b1b8de
+
+        .post-bottom-info
+            margin-top: 10px
+            display: flex
+            justify-content: space-between
+            color: #b1b8de
+            font:
+                size: 12px
+                family: 'Ubuntu'
+            i
+                margin-left: 5px
+                font:
+                    size: 14px
+        
+    .odd
+        background: #1f2741
+        
+    .even
+        background: #212c45
+    
+.active
+    position: absolute
+    left: 0
+    top: 0
+    width: 3px
+    height: 100%
+    background: $yellow
+    
+.activeColor
+    color: $yellow!important
+    
+    
+    
+.post-container
+    background: #f1f1f1
+    padding: 30px 60px
+    overflow: scroll
+    
+    
+    .post-preview
+        display: flex
+        justify-content: flex-end
+    
+        .preview-post
+            font-size: 14px
+            cursor: pointer
+            i
+                font-size: 18px
+
+    .post-header
+        display: flex
+        align-items: center
+        margin-bottom: 30px
+        
+        .avatar
+            width: 50px
+            height: 50px
+            border-radius: 50%
+            overflow: hidden
+            margin-right: 20px
+            box-shadow: 0 3px 20px rgba(0,0,0,0.2)
+            img
+                width: 100%
+                height: auto
+                
+        .post-header-info
+            font:
+                family: 'Ubuntu'
+                size: 14px
+                weight: 600
+            p
+                margin: 0
+            span
+                font:
+                    family: 'Ubuntu'
+                    size: 10px
+                    weight: 300
+                color: #828282
+                
+    .post-content
+
+        h3
+            font:
+                family: 'Ubuntu'
+                size: 46px
+                weight: 600
+            margin-bottom: 30px
+        p
+            font:
+                family: 'Ubuntu'
+                size: 18px
+                weight: 300
+        
+        .post-title
+            width: 100%
+            height: 50px
+            margin-bottom: 50px
+                
+            
+        .container
+            margin: 0
+            padding: 0
+            width: 100%
+            margin-top: 50px
+
+        /* layout.css Style */
+        .upload-drop-zone 
+            height: 200px
+            border-width: 2px
+            margin-bottom: 20px
+
+
+        /* skin.css Style*/
+        .upload-drop-zone 
+            color: #ccc
+            border-style: dashed
+            border-color: #ccc
+            line-height: 200px
+            text-align: center
+
+        .upload-drop-zone.drop 
+            color: #222
+            border-color: #222
