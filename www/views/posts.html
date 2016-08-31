@@ -39,7 +39,7 @@
 
     <!-- Preview / Edit state button -->
     <div class="post-preview">
-        <div ng-click="postPreview = !postPreview" class="preview-post">
+        <div ng-click="setpreview()" class="preview-post">
             <span ng-show="postPreview">
             <i class="fa fa-eye"></i> Preview
             </span>
@@ -70,7 +70,7 @@
     </div>
 
     <!-- Edit Mode -->
-    <div ng-hide="!postPreview" class="post-content">
+    <div ng-show="!postPreview == true" class="post-content">
         <label for="post-title">Title</label>
         <input id="post-title" type="text" ng-model="postIndex.title" class="post-title form-control">
 

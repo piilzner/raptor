@@ -1,7 +1,9 @@
 app.directive('sidebar', function() {
   return {
     restrict: 'E',
-    controller: ['$scope', function($scope){
+    controller: ['$scope', 'postsFactory', function($scope, postsFactory){
+        
+    $scope.posts = postsFactory.posts;
         
             //Project name **Make dynamic**
     $scope.projectName = "Raptor CMS Project"
